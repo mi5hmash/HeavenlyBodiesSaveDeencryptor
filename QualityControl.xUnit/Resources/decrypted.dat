@@ -1,0 +1,93 @@
+{
+	"data" : {
+		"__type" : "HB.Runtime.Serialization.GameSaveManager+SaveData,Assembly-CSharp",
+		"value" : {
+			"slotId" : 0,
+			"name" : "Slot 0 - 11\/03\/2022 22:49:43",
+			"progressData" : {
+				"currentMissionId" : "evacuation",
+				"tutorialIsComplete" : false,
+				"completedMissions" : [
+					"solar_maintenance","comms_tower","cargo_bay","asteroid_mining","oxygen_garden","thruster_maintenance"
+				],
+				"currentMissionState" : "{\"mission_id\":\"evacuation\",\"bool_variables\":{\"ending_checkpoint_reached\":true,\"oxygen_checkpoint_reached\":true,\"lof_checkpoint_reached\":true},\"int_variables\":{},\"float_variables\":{},\"vec3_variables\":{},\"misc_mission_data\":{}}",
+				"hasCurrentMissionState" : true,
+				"currentMissionElapsedTime" : "00:08:02.1880871",
+				"lastMissionStateUpdateTime" : {
+					"ticks" : 638046673625370760
+				},
+				"totalPlayTime" : "03:38:48.3891291",
+				"lastAutoSaveTime" : {
+					"ticks" : 638031125831345380
+				},
+				"unlockedCollectables" : [
+					"boot","capsule","sputnik","record","glove","collar","figure"
+				],
+				"completedChallenges" : [
+					"sm_chal_openWithRacket","sm_chal_collectable","sm_chal_newtonianMode","ct_chal_collectable","ct_chal_timeLimit","ct_chal_newtonianMode","cb_chal_deployByHand","cb_chal_collectable","cb_challenge_newtonianMode","am_chal_collectable","am_bring_home_rock","am_redeploy_telescope","am_chal_newtonianMode","ox_chal_growAllPlants","ox_chal_collectable","ox_chal_newtonianMode","tm_chal_collectable","tm_challenge_newtonianMode","evac_chal_collectable","evac_chal_newtonianMode"
+				],
+				"unlockedAchievements" : [
+					"first_contact","greetings_viewers","explosive_decompress","complete_mission_in_newtonian","complete_sunlight_challenges","complete_sunlight","complete_data","complete_data_challenges","enter_cargo_bay_assembly_zone","complete_vision_challenges","complete_vision","plant_navigation_flag","complete_minerals_challenges","complete_minerals","safety_first","complete_oxygen_challenges","complete_oxygen","complete_energy_challenges","complete_energy","recover_near_death_experience","bring_trophy_to_escape_pod","collect_all_collectables","complete_evacuation","complete_evac_challenges"
+				],
+				"cleanupMissionData" : {
+					"lastCompletedDay" : 0
+				}
+			},
+			"psnActivitiesData" : {
+				"hasActiveActivity" : false,
+				"activityId" : "hb_mission_evac",
+				"inProgressActivities" : null,
+				"completedActivities" : null,
+				"availableObjectiveActivities" : null,
+				"availableMissionActivities" : [
+					"hb_mission_sm","hb_mission_ct","hb_mission_cb","hb_mission_am","hb_mission_ox","hb_mission_tm","hb_mission_evac"
+				]
+			},
+			"statsData" : {
+				"stats" : [
+					{
+						"id" : "stat_switchesToggled",
+						"data" : "209"
+					},{
+						"id" : "stat_sodaCansConsumed",
+						"data" : "1"
+					},{
+						"id" : "stat_papersDispensed",
+						"data" : "18"
+					},{
+						"id" : "stat_deathCount",
+						"data" : "1"
+					},{
+						"id" : "stat_bestTime_solarMaintenance",
+						"data" : "01:15:20.6981910"
+					},{
+						"id" : "stat_bestTime_commsTower",
+						"data" : "00:03:22.5564900"
+					},{
+						"id" : "stat_bestTime_cargoBay",
+						"data" : "00:09:55.3992080"
+					},{
+						"id" : "stat_shuttleDistanceTravelled",
+						"data" : "7380,1825904846191"
+					},{
+						"id" : "stat_asteroidCollisions",
+						"data" : "1821"
+					},{
+						"id" : "stat_bestTime_asteroidMining",
+						"data" : "00:23:31.7486060"
+					},{
+						"id" : "stat_plantsGrown",
+						"data" : "30"
+					},{
+						"id" : "stat_bestTime_oxygenGarden",
+						"data" : "00:34:07.9696090"
+					},{
+						"id" : "stat_bestTime_thrusterMaintenance",
+						"data" : "00:22:04.8354460"
+					}
+				]
+			},
+			"dlcSelectionId" : null
+		}
+	}
+}

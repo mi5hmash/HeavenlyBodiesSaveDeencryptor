@@ -1,0 +1,6 @@
+# Set default behavior to automatically normalize line endings.
+* text=auto
+
+# Treat these files as binary
+*/Resources/decrypted.dat   binary
+*/Resources/encrypted.dat   binary

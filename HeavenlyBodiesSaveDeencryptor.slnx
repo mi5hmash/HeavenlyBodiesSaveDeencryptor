@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="heavenly-bodies-save-deencryptor-cli/heavenly-bodies-save-deencryptor-cli.csproj" />
+  <Project Path="QualityControl.xUnit/QualityControl.xUnit.csproj" Id="9f90e759-2fa4-4295-9956-5efce0c49212" />
+</Solution>
