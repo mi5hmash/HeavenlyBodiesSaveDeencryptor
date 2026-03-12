@@ -6,7 +6,7 @@
 > [!IMPORTANT]
 > **This software is free and open source. If someone asks you to pay for it, it's likely a scam.**
 
-# 👨‍🚀 HeavenlyBodiesSaveDeencryptor - What is it :interrobang:
+# 👨‍🚀👩‍🚀 HeavenlyBodiesSaveDeencryptor - What is it :interrobang:
 ![icon](https://github.com/mi5hmash/HeavenlyBodiesSaveDeencryptor/blob/main/.resources/images/HBSD-logo.png)
 
 This console application can **decrypt and encrypt SaveData files** from the Heavenly Bodies game.
