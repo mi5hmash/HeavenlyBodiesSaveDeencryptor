@@ -41,7 +41,7 @@ Options:
   -p <input_folder_path>  Path to folder containing SaveData files
   -g <code>               Game code to use for decryption/encryption (optional)
   -nc                     Disables compression when encrypting (optional)
-  -v                      Verbose output
+  -q                      Don't wait for user input to exit after operation completes (auto-close)
   -h                      Show this help message
 ```
 
