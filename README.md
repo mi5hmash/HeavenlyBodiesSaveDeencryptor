@@ -12,7 +12,7 @@
 This console application can **decrypt and encrypt SaveData files** from the Heavenly Bodies game.
 
 > [!NOTE]
-The game uses the Easy Save 3 system. If another game also relies on this save‑file serialization system and you know the correct password, then my tool should be able to decrypt those files as well.
+The game uses the Easy Save 3 system. If another game also relies on this save‑file serialization system and you know the correct password, then my tool should be able to decrypt those files as well. The list of known passwords can be found [there](https://gist.github.com/fc93fc1c64b3f8c03abec75facdbc874).
 
 # :scream: Is it safe?
 The short answer is: **No.** 

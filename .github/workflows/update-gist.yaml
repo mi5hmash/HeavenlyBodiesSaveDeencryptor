@@ -1,0 +1,45 @@
+# v1.0.0
+name: Update the Gist
+# on push of (es3-passwords.json) into a branch (main), workflow_dispatch or schedule, do...
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - ".resources/es3-passwords.json"
+  workflow_dispatch:
+# ...jobs
+jobs:
+  onpush:
+    runs-on: ubuntu-latest
+    steps:
+      # 1st Step: Check out the repository so it can read and write the files inside of it.
+      # https://github.com/marketplace/actions/checkout
+      - name: Check out repo
+        uses: actions/checkout@v6
+      # 2nd Step: Install Deno, the runtime for JavaScript and TypeScript that will run the script.
+      # https://github.com/marketplace/actions/setup-deno
+      - name: Setup deno
+        uses: denoland/setup-deno@v2
+        with:
+          deno-version: v2.x
+      # 3rd Step: Run the script (gistConstructor.ts)
+      - name: Run the 'gistConstructor' script
+        run: deno run -R -W ".github/workers/gistConstructor.ts"
+      # 4th Step: Update the Gist with the new content of temp-es3-passwords.md
+      - name: Update Gist
+        env:
+          # The ID of the Gist to update (can be found in the URL of the Gist)
+          GIST_ID: fc93fc1c64b3f8c03abec75facdbc874
+          # The token to authenticate with the GitHub API (https://github.com/settings/tokens).
+          # Must have a Gist R+W attributes and be stored as a secret in the repository:
+          # Settings → Secrets and Variables → Actions → Repository secrets
+          GIST_TOKEN: ${{ secrets.GIST_TOKEN }}
+        run: |
+          CONTENT=$(jq -Rs . < temp-es3-passwords.md)
+          curl -X PATCH \
+            --fail-with-body \
+            -H "Authorization: Bearer $GIST_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            https://api.github.com/gists/$GIST_ID \
+            -d "{\"files\": {\"es3-easy-save-3-savedata-passwords.md\": {\"content\": $CONTENT}}}"
